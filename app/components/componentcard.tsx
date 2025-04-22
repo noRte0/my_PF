@@ -1,4 +1,17 @@
 import React from "react";
+import { Erica_One, Lalezar } from "next/font/google";
+
+const ericaOne = Erica_One({
+    variable: "--font-erica-one", // Custom CSS variable for the font
+    subsets: ["latin"], // Choose the subset
+    weight: "400", // Specify font weight
+});
+
+const lalezar = Lalezar({
+    variable: "--font-Lalezar", // Custom CSS variable for the font
+    subsets: ["latin"], // Choose the subset
+    weight: "400", // Specify font weight
+});
 
 interface ComponentcardProps {
     image: string; 
@@ -31,7 +44,7 @@ const Componentcard: React.FC<ComponentcardProps> = ({ image, name, link }) => {
                 <div
                     className="absolute bottom-0 z-20 pb-1 bg-black w-full h-0 group-hover:h-16 transition-all duration-500 overflow-hidden flex items-center pl-2"
                 >
-                    <h1 className="font-serif text-4xl font-bold text-white shadow-xl text-center">{name}</h1>
+                    <h1 className={`text-shadow-lg/20 font-serif text-4xl font-bold text-white shadow-xl text-center ${lalezar.className}`}>{name}</h1>
                 </div>
             </div>
         </a>

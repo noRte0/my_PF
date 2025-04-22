@@ -1,4 +1,5 @@
 "use client"
+import "./rootpage.css";
 import React from 'react'
 import { ProfileCardContainer } from '../components/profile/ProfileCardContent'
 import { ProfileImage } from '../components/profile/ProfileCardImage'

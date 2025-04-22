@@ -3,6 +3,7 @@ import { Erica_One, Lalezar } from "next/font/google";
 import "../globals.css";
 import Searchbar from './ui/searchbar';
 
+
 const ericaOne = Erica_One({
     variable: "--font-erica-one", // Custom CSS variable for the font
     subsets: ["latin"], // Choose the subset
@@ -31,16 +32,16 @@ const Navbar = () => {
                 <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
                     <ul className="flex flex-col p-4 md:p-0 mt-1 text-sm border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li className='rounded-2xl py-1 px-2 w-auto h-auto items-center justify-center flex hover:text-opacity-60 hover:text-black hover:bg-stone-300'>
-                            <a href="/blogs_page" className={`${lalezar.className}`}>BLOG</a>
+                            <a href="/blogs_page" className={`${lalezar.className} text-shadow-lg/30 `}>BLOG</a>
                         </li>
                         <li className='rounded-2xl py-1 px-2 w-auto h-auto items-center justify-center flex hover:text-opacity-60 hover:text-black hover:bg-stone-300'>
-                            <a href="/component_page" className={`${lalezar.className}`}>COMPONENTS</a>
+                            <a href="/component_page" className={`${lalezar.className} text-shadow-lg/30`}>COMPONENTS</a>
                         </li>
                         <li className='rounded-2xl py-1 px-2 w-auto h-auto items-center justify-center flex hover:text-opacity-60 hover:text-black hover:bg-stone-300'>
-                            <a href="#" className={`${lalezar.className}`}>WORK</a>
+                            <a href="#" className={`${lalezar.className} text-shadow-lg/30`}>WORK</a>
                         </li>
                         <li className='rounded-2xl py-1 px-2 w-auto h-auto items-center justify-center flex hover:text-opacity-60 hover:text-black hover:bg-stone-300'> 
-                            <a href="#" className={`${lalezar.className}`}>REPOSITORY</a>
+                            <a href="#" className={`${lalezar.className} text-shadow-lg/30`}>REPOSITORY</a>
                         </li>
                     </ul>
                 </div>
